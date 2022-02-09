@@ -8,9 +8,13 @@
       src="https://kit.fontawesome.com/284af94961.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    
   </head>
   <body>
     <header>
@@ -18,16 +22,18 @@
     </header>
 
     <section>
-      <div id="barre"></div>
-      <div class="icone"><i class="fas fa-map-marker-alt"></i></div>
-      <div class="search">
-        <input type="text" name="localisation" value="Marseille, France" />
+      <div id="barre">
+        <div class="icone"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="search"><p>Paris, Belleville</p></div>
       </div>
     </section>
     <section>
       <div class="Apropos">
         <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception,séléctionnés par nos soins.</p>
+        <p>
+          Découvrez des restaurants d'exception, séléctionnés par nos soins.
+        </p>
+        <button>Explorer nos restaurants</button>
       </div>
     </section>
     <section>
@@ -56,7 +62,7 @@
             <a href="#">Composez votre menu</a>
           </div>
         </div>
-        <div class="Fforme">
+        <div class="Fforme F3">
           <div class="numéro">
             <p>3</p>
           </div>
@@ -80,7 +86,7 @@
               <h3>
                 La palette du goût
                 <div class="Heart">
-                  <i class="fa fa-heart-o"></i>
+                  <i class="fa-regular fa-heart"></i>
                 </div>
               </h3>
               <p>Ménilmontant</p>
@@ -136,12 +142,22 @@
     </section>
     <footer>
       <div id="propos">
-        <img src="./images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood" />
         <div>
-          <p>Proposer un restaurant</p>
-          <p>Devenir partenaire</p>
-          <p>Mentions légales</p>
-          <p>Contact</p>
+          <h3>ohmyfood</h3>
+          <div class="Footerp">
+            <div class="part">
+              <p>
+                <i class="fa-solid fa-utensils fa-fw"></i></i>Proposer un restaurant
+              </p>
+              <p>
+                <i class="fa-solid fa-handshake-angle fa-fw"></i>Devenir partenaire
+              </p>
+            </div>
+            <div class="part2">
+              <p>Mentions légales</p>
+              <p>Contact</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
