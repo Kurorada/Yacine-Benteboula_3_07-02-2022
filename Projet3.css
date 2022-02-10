@@ -209,3 +209,8 @@ button {
   font-size: 20px;
   font-weight: 300;
 }
+
+section#menu {
+  background: #f9f9f9;
+  border-radius: 45px;
+}
