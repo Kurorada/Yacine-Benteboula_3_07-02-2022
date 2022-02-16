@@ -2,14 +2,26 @@ main#menu {
   background: #f9f9f9;
   border-radius: 45px 45px 0 0;
   width: 100%;
-  margin: 10em 0 0 0;
+  margin: 13.6em 0 0 0;
 }
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   height: 2em;
   padding: 15px;
+  width: 100%;
+  margin-left: -27px;
+}
+
+header i {
+  align-self: center;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+header img {
+  margin-right: 60px;
 }
 
 body {
@@ -22,6 +34,7 @@ h1 {
   font-family: "Shrikhand";
   padding: 35px 0px 0px 18px;
   font-size: 32px;
+  font-weight: 500;
 }
 
 h2 {
