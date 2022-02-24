@@ -84,28 +84,42 @@ section .container {
   justify-content: space-between;
 }
 
+.New {
+  border: 2px solid green;
+  background: green;
+  width: fit-content;
+  color: lightgreen;
+  position: relative;
+  right: 20px;
+  top: 10px;
+}
+
 .Heart {
   font-size: 1.5em;
   margin-right: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -16px;
 }
 
 .card p {
-  margin-top: 5px;
+  margin: -4px 0px 0px 0px;
   font-weight: 300;
 }
 .La_palette {
-  background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
+  background: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
     repeat 0 0;
   width: 100%;
   height: 70%;
   border-radius: 30px 30px 0px 0px;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .La_note {
-  background: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) repeat 0
-    0;
+  background: url(./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) repeat 0 0;
   width: 100%;
   height: 70%;
   border-radius: 30px 30px 0px 0px;
@@ -114,7 +128,7 @@ section .container {
 }
 
 .La_française {
-  background: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)
+  background: url(./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)
     repeat 0 0;
   width: 100%;
   height: 70%;
@@ -124,7 +138,7 @@ section .container {
 }
 
 .Le_délice {
-  background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
+  background: url(./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
     repeat 0 0;
   width: 100%;
   height: 70%;
