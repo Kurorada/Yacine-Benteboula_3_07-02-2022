@@ -5,7 +5,7 @@ body {
   margin: 0%;
 }
 
-section .Fonctionnement {
+.Fonctionnement {
   margin-left: 27px;
 }
 
@@ -45,7 +45,7 @@ section .Fonctionnement {
   margin: -14px;
 }
 
-.icone {
+section .fa-solid {
   margin-left: 40px;
   margin-right: 30px;
   color: grey;
@@ -61,7 +61,7 @@ section .Fonctionnement {
   margin: 50px 0px 0px 10px;
 }
 
-.Restaurant .card {
+section .card {
   width: 95%;
   height: 16em;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
@@ -85,13 +85,13 @@ section .container {
 }
 
 .New {
-  border: 2px solid green;
-  background: green;
+  background: #99e2d0;
   width: fit-content;
-  color: lightgreen;
+  color: green;
   position: relative;
   right: 20px;
   top: 10px;
+  height: 25px;
 }
 
 .Heart {
@@ -125,6 +125,8 @@ section .container {
   border-radius: 30px 30px 0px 0px;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .La_française {
