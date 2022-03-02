@@ -100,6 +100,7 @@ section .container {
   display: flex;
   flex-direction: row-reverse;
   margin-top: -16px;
+  fill: #9356dc;
 }
 
 .card p {
