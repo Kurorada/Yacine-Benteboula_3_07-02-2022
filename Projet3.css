@@ -10,7 +10,6 @@ body {
 }
 
 .Fforme {
-  border: 3px white solid;
   border-radius: 30px;
   background-color: #f2f2f2;
   display: flex;
@@ -18,13 +17,21 @@ body {
   width: 90%;
   height: 75px;
   margin: 20px 0px;
-}
-.Fforme:hover {
-  background-color: #9356dc;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .F3 {
-  background-color: #9356dc;
+  background-color: #f4edfe;
+}
+
+.Fforme:hover {
+  background-color: #f4edfe;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .texte a {
@@ -99,12 +106,22 @@ section .container {
   margin-right: 25px;
   display: flex;
   flex-direction: row-reverse;
-  margin-top: -16px;
-  fill: #9356dc;
+  margin-top: -5px;
+  font-weight: bold;
+}
+
+.fa-regular .fa-heart {
+  font-weight: bold;
+  color: white;
+  transition-duration: 400ms;
+}
+.fa-regular.fa-heart:hover {
+  color: #9356dc;
+  font-weight: bold;
 }
 
 .card p {
-  margin: -4px 0px 0px 0px;
+  margin: -6px 0px 0px 0px;
   font-weight: 300;
 }
 .La_palette {
@@ -220,6 +237,12 @@ button {
   font-family: "Roboto";
   font-weight: 400;
   width: 63%;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+button:hover {
+  transform: scale(1.2);
+  box-shadow: (0 0 0 / 35%) 0px 5px 15px;
 }
 
 .Apropos p {
