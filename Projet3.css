@@ -7,6 +7,12 @@ body {
 
 .Fonctionnement {
   margin-left: 27px;
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.Fonctionnement h2 {
+  margin: 30px 0px 30px -10px;
 }
 
 .Fforme {
@@ -15,8 +21,8 @@ body {
   display: flex;
   align-items: center;
   width: 90%;
-  height: 75px;
-  margin: 20px 0px;
+  height: 80px;
+  margin: 25px 0px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
@@ -27,6 +33,7 @@ body {
 
 .Fforme:hover {
   background-color: #f4edfe;
+  box-shadow: 15px 12px 10px #c2c2c2;
 }
 
 a {
@@ -75,7 +82,7 @@ section .card {
   transition: 0.3s;
   background-color: white;
   margin: 20px 0px 0px 10px;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 section .container {
   margin-left: 5%;
@@ -93,12 +100,24 @@ section .container {
 
 .New {
   background: #99e2d0;
-  width: fit-content;
+  width: 80px;
   color: green;
   position: relative;
   right: 20px;
-  top: 10px;
-  height: 25px;
+  height: 22px;
+  font-weight: bold;
+  padding: 6px;
+  text-align: center;
+}
+
+.La_palette p {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.La_note p {
+  font-weight: 500;
+  font-size: 17px;
 }
 
 .Heart {
@@ -110,17 +129,35 @@ section .container {
   font-weight: bold;
 }
 
-.fa-regular .fa-heart {
-  font-weight: bold;
-  color: white;
-  transition-duration: 400ms;
-}
-.fa-regular.fa-heart:hover {
-  color: #9356dc;
-  font-weight: bold;
+.Heart i {
+  border-color: #383838;
+  transition: color 2s;
+  transform: scale(1);
 }
 
-.card p {
+.Heart i:hover {
+  /*transform: scale(1.2);*/
+  font-weight: bold;
+  color: #9356dc;
+  animation: heart-load;
+  animation-duration: 2s;
+}
+
+@keyframes heart-load {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.container p {
   margin: -6px 0px 0px 0px;
   font-weight: 300;
 }
@@ -219,12 +256,14 @@ header {
 
 .Apropos {
   background: #f9f9f9;
-  padding: 54px 20px;
+  padding: 20px 20px 60px;
   text-align: center;
 }
 
 .Apropos h1 {
-  font-size: 33px;
+  width: 80%;
+  margin-left: 35px;
+  margin-top: 50px;
 }
 
 button {
@@ -239,13 +278,58 @@ button {
   width: 63%;
   transform: scale(1);
   transition: transform 400ms;
+  box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
 }
 button:hover {
   transform: scale(1.2);
-  box-shadow: (0 0 0 / 35%) 0px 5px 15px;
+  box-shadow: 0px 5px 38px 10px rgb(147 86 220 / 69%);
+  opacity: 0.9;
 }
 
 .Apropos p {
   font-size: 20px;
   font-weight: 300;
+}
+
+#spinner {
+  position: fixed;
+  background-color: #f9f9f9;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.8;
+  animation: fond 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+#spinner::after {
+  content: "";
+  animation: spin 3s infinite linear;
+  width: 100px;
+  height: 100px;
+  border-top: 5px solid #9356dc;
+  border-bottom: 5px solid #99e2d0;
+  border-radius: 50%;
+  /*border: 30px solid;
+  padding: 20px;
+  border-image: linear-gradient(#ff79da, #9356dc, #99e2d0);*/
+}
+
+@keyframes fond {
+  0% {
+    transform: translatex(-9999px);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }

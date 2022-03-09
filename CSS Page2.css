@@ -3,6 +3,61 @@ main#menu {
   border-radius: 45px 45px 0 0;
   width: 100%;
   margin: 13.6em 0 0 0;
+  /*animation: menu-load 3s ease-in;
+  animation-delay: 200ms;*/
+}
+
+.card {
+  animation: menu-load 1s;
+  animation-fill-mode: backwards;
+}
+
+.card1 {
+  animation: menu-load 1s;
+  animation-delay: 500ms;
+  animation-fill-mode: backwards;
+}
+
+.card2 {
+  animation: menu-load 1s ease-out;
+  animation-delay: 700ms;
+  animation-fill-mode: backwards;
+}
+
+.card3 {
+  animation: menu-load 1s ease-out;
+  animation-delay: 900ms;
+  animation-fill-mode: backwards;
+}
+
+.card4 {
+  animation: menu-load 1s ease-out;
+  animation-delay: 1100ms;
+  animation-fill-mode: backwards;
+}
+
+.card5 {
+  animation: menu-load 1s ease-out;
+  animation-delay: 1300ms;
+  animation-fill-mode: backwards;
+}
+
+.card6 {
+  animation: menu-load 1s ease-out;
+  animation-delay: 1500ms;
+  animation-fill-mode: backwards;
+}
+
+.card7 {
+  animation: menu-load 1s ease-out;
+  animation-delay: 1700ms;
+  animation-fill-mode: backwards;
+}
+
+.card8 {
+  animation: menu-load 1s ease-out;
+  animation-delay: 1900ms;
+  animation-fill-mode: backwards;
 }
 
 header {
@@ -10,7 +65,6 @@ header {
   justify-content: space-around;
   height: 2em;
   padding: 15px;
-  width: 100%;
   margin-left: -27px;
 }
 
@@ -54,6 +108,7 @@ h3 {
 p {
   font-weight: 300;
   font-size: 16px;
+  margin-bottom: 12px;
 }
 .La_française {
   background: url(./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
@@ -65,17 +120,14 @@ p {
 }
 
 .card {
-  border: 3px solid white;
   background-color: white;
-  width: 85%;
-  height: 45px;
+  width: 91%;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   transition: 0.3s;
   margin: 18px 0px 0px 19px;
   display: flex;
-  flex-direction: column;
-  padding: 10px;
+  overflow: hidden;
 }
 
 .prix {
@@ -84,7 +136,7 @@ p {
 }
 
 .card h3 {
-  margin: -2px 0px -10px 0px;
+  margin: 12px 0px -10px 0px;
 }
 
 button {
@@ -105,7 +157,6 @@ button {
   overflow: auto;
 }
 footer {
-  width: 100%;
   background: #383838;
   padding: 30px;
   color: white;
@@ -132,4 +183,59 @@ footer .fa-solid {
 }
 footer p {
   margin: 13px 0;
+}
+
+@keyframes menu-load {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 0px 25px 0 10px;
+}
+
+.check .fa-solid {
+  color: white;
+  font-size: 24px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  width: 0;
+}
+.card:hover .check {
+  animation: select 1s ease;
+  width: 23%;
+}
+
+.card:hover .fa-solid {
+  animation: anime 1s both;
+}
+
+@keyframes select {
+  0% {
+    transform: translateX(80px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+}
+@keyframes anime {
+  60% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
