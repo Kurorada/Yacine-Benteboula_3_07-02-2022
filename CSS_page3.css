@@ -59,6 +59,11 @@ main#menu {
   animation-delay: 1900ms;
   animation-fill-mode: backwards;
 }
+.card9 {
+  animation: menu-load 1s ease-out;
+  animation-delay: 2200ms;
+  animation-fill-mode: backwards;
+}
 
 header {
   display: flex;

@@ -261,9 +261,8 @@ header {
 }
 
 .Apropos h1 {
-  width: 80%;
-  margin-left: 35px;
   margin-top: 50px;
+  font-size: 33px;
 }
 
 button {
@@ -331,5 +330,113 @@ button:hover {
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    font-size: 30px;
+  }
+
+  header img {
+    height: 50px;
+  }
+
+  #barre {
+    font-size: 30px;
+  }
+  .Restaurant h2 {
+    margin: 50px 0px 0px 10px;
+    width: 100%;
+  }
+
+  .Restaurant {
+    background: #f6f6f6;
+    padding: 12px 10px 70px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+  }
+
+  section .card {
+    width: 45%;
+    height: 15em;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    background-color: white;
+    margin: 50px 40px 45px 50px;
+    border-radius: 30px;
+    /* padding: 46px; */
+  }
+
+  .Apropos h1 {
+    margin-top: 50px;
+    font-size: 42px;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .Apropos p {
+    font-size: 35px;
+    font-weight: 300;
+  }
+
+  button {
+    border-radius: 30px;
+    height: 80px;
+    font-size: 30px;
+    width: 25%;
+  }
+
+  .Fonctionnement {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+  }
+
+  .Fonctionnement h2 {
+    width: 100%;
+  }
+
+  .Fforme {
+    width: 30%;
+    height: 100px;
+    margin: 30px 30px;
+    font-size: 30px;
+  }
+
+  section .fa-solid {
+    font-size: 30px;
+  }
+
+  .numéro {
+    font-size: 30px;
+  }
+
+  .New {
+    width: 120px;
+    height: 40px;
+  }
+
+  .La_palette p {
+    font-size: 30px;
+  }
+
+  .La_note p {
+    font-size: 30px;
+  }
+
+  footer {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer h3 {
+    font-size: 30px;
+  }
+
+  footer .fa-solid {
+    font-size: 30px;
   }
 }
