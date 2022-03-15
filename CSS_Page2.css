@@ -320,22 +320,7 @@ footer p {
   animation: anime 1.5s both;
 }
 
-/*@keyframes select {
-  0% {
-    transform: translateX(80px);
-  }
-  40% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(150px);
-  }
-}*/
-
 @keyframes anime {
-  60% {
-    transform: rotate(360deg);
-  }
   100% {
     transform: rotate(360deg);
   }
