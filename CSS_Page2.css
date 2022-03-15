@@ -112,10 +112,20 @@ h3 {
   font-size: 20px;
 }
 
+h4 {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 p {
   font-weight: 300;
   font-size: 16px;
   margin-bottom: 12px;
+
+  overflow: hidden;
 }
 .La_française {
   background: url(./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
@@ -162,6 +172,7 @@ p {
   margin: 18px 0px 0px 19px;
   display: flex;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .prix {
@@ -171,6 +182,8 @@ p {
 
 .card h3 {
   margin: 12px 0px -10px 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 button {
@@ -182,8 +195,9 @@ button {
   font-size: 18px;
   font-family: "Roboto";
   font-weight: 400;
-  width: 45%;
-  margin: 50px 0px 50px 120px;
+  width: 50%;
+  margin: 50px 0px 50px 110px;
+  border-radius: 30px;
 }
 
 #haut {
@@ -273,6 +287,7 @@ footer p {
 .container {
   width: 100%;
   padding: 0px 25px 0 10px;
+  overflow: hidden;
 }
 
 .check .fa-solid {
@@ -286,24 +301,29 @@ footer p {
   justify-content: center;
   background-color: #99e2d0;
   width: 0;
+  transition: all 1s ease;
 }
 .card:hover .check {
-  animation: select 1s ease;
+  animation: select 2s both;
   width: 23%;
+  margin-right: 0%;
 }
 
 .card:hover .fa-solid {
-  animation: anime 1s both;
+  animation: anime 0.5s both;
 }
 
-@keyframes select {
+/*@keyframes select {
   0% {
     transform: translateX(80px);
   }
   40% {
     transform: translateX(0);
   }
-}
+  100% {
+    transform: translateX(150px);
+  }
+}*/
 
 @keyframes anime {
   60% {
@@ -315,9 +335,29 @@ footer p {
 }
 
 @media screen and (min-width: 1024px) {
+  .card h3 {
+    margin: 12px 0px -20px 0px;
+  }
+
   .Menu {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  header {
+    font-size: 40px;
+    margin-left: 0%;
+  }
+
+  header i {
+    font-size: 40px;
+    margin-right: 17em;
+  }
+
+  header img {
+    height: 50px;
+    margin-right: 8em;
+    margin-left: -9em;
   }
 
   h2 {
@@ -325,7 +365,192 @@ footer p {
   }
 
   .card {
-    width: 30%;
-    height: 90px;
+    width: 31%;
+    height: 100px;
+  }
+
+  button {
+    border-radius: 50px;
+    height: 100px;
+    font-size: 30px;
+    width: 25%;
+    margin-left: 12.5em;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  .Heart {
+    font-size: 35px;
+  }
+
+  footer {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer h3 {
+    font-size: 30px;
+  }
+
+  footer .fa-solid {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header {
+    font-size: 40px;
+  }
+
+  header i {
+    font-size: 40px;
+    margin-right: 17em;
+  }
+
+  header img {
+    height: 50px;
+    margin-right: 14em;
+    margin-left: -6em;
+  }
+
+  h2 {
+    width: 100%;
+  }
+
+  .card {
+    width: 31%;
+    height: 115px;
+    margin: 30px 0px 30px 20px;
+  }
+
+  button {
+    border-radius: 50px;
+    height: 100px;
+    font-size: 30px;
+    width: 25%;
+    margin-left: 18.5em;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 28px;
+  }
+
+  .Heart {
+    font-size: 35px;
+  }
+
+  footer {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer h3 {
+    font-size: 30px;
+  }
+
+  footer .fa-solid {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .Menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header {
+    font-size: 40px;
+  }
+
+  header i {
+    font-size: 40px;
+    margin-right: 17em;
+  }
+
+  header img {
+    height: 50px;
+    margin-right: 20em;
+    margin-left: 0;
+  }
+
+  h2 {
+    width: 100%;
+  }
+
+  .card {
+    width: 32%;
+    height: 130px;
+    margin: 30px 0px 30px 20px;
+  }
+
+  button {
+    border-radius: 50px;
+    height: 100px;
+    font-size: 30px;
+    width: 25%;
+    margin-left: 24.5em;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 28px;
+  }
+
+  .Heart {
+    font-size: 35px;
+  }
+
+  footer {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer h3 {
+    font-size: 30px;
+  }
+
+  footer .fa-solid {
+    font-size: 30px;
   }
 }
