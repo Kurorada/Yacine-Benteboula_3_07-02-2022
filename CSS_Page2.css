@@ -125,6 +125,8 @@ p {
   font-size: 16px;
   margin-bottom: 12px;
 
+  margin-right: -28px;
+
   overflow: hidden;
 }
 .La_française {
@@ -178,6 +180,11 @@ p {
 .prix {
   display: flex;
   justify-content: space-between;
+}
+
+.prix p {
+  width: 29px;
+  margin-right: -10px;
 }
 
 .card h3 {
@@ -310,7 +317,7 @@ footer p {
 }
 
 .card:hover .fa-solid {
-  animation: anime 0.5s both;
+  animation: anime 1.5s both;
 }
 
 /*@keyframes select {
@@ -365,7 +372,7 @@ footer p {
   }
 
   .card {
-    width: 31%;
+    width: 47%;
     height: 100px;
   }
 
@@ -375,6 +382,11 @@ footer p {
     font-size: 30px;
     width: 25%;
     margin-left: 12.5em;
+  }
+
+  .prix p {
+    width: 60px;
+    margin-right: -21px;
   }
 
   h1 {
@@ -411,6 +423,17 @@ footer p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  header img {
+    margin-right: 12em;
+    margin-left: 6em;
+  }
+
+  button {
+    margin-left: 11em;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .Menu {
     display: flex;
@@ -437,9 +460,10 @@ footer p {
   }
 
   .card {
-    width: 31%;
+    width: 50%;
     height: 115px;
     margin: 30px 0px 30px 20px;
+    margin-left: 20em;
   }
 
   button {
