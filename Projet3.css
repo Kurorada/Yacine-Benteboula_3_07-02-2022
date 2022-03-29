@@ -349,6 +349,7 @@ button:hover {
   .Restaurant h2 {
     margin: 50px 0px 0px 10px;
     width: 100%;
+    font-size: 32px;
   }
 
   .Restaurant {
@@ -361,7 +362,7 @@ button:hover {
 
   section .card {
     width: 40%;
-    height: 15em;
+    height: 11em;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     transition: 0.3s;
     background-color: white;
@@ -370,22 +371,40 @@ button:hover {
     /* padding: 46px; */
   }
 
+  .container p {
+    margin: 0px 0px 0px 0px;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .Heart {
+    font-size: 25px;
+  }
+
   .Apropos h1 {
     margin-top: 50px;
-    font-size: 42px;
+    font-size: 32px;
     width: 100%;
     margin-left: 0%;
   }
 
   .Apropos p {
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 300;
   }
 
   button {
     border-radius: 30px;
     height: 80px;
-    font-size: 30px;
+    font-size: 20px;
     width: 25%;
   }
 
@@ -397,6 +416,7 @@ button:hover {
 
   .Fonctionnement h2 {
     width: 100%;
+    font-size: 32px;
   }
 
   .Fforme {
@@ -415,17 +435,21 @@ button:hover {
     width: 55px;
   }
 
+  a {
+    font-size: 18px;
+  }
+
   .New {
-    width: 120px;
-    height: 40px;
+    width: 90px;
+    height: 24px;
   }
 
   .La_palette p {
-    font-size: 30px;
+    font-size: 18px;
   }
 
   .La_note p {
-    font-size: 30px;
+    font-size: 18px;
   }
 
   footer {
@@ -470,7 +494,7 @@ button:hover {
 
   section .card {
     width: 43%;
-    height: 15em;
+    height: 13em;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     transition: 0.3s;
     background-color: white;
@@ -481,18 +505,43 @@ button:hover {
 
   .Apropos h1 {
     margin-top: 50px;
-    font-size: 42px;
+    font-size: 35px;
     width: 100%;
     margin-left: 0%;
   }
 
   .Apropos p {
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 300;
   }
 
+  a {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  .container p {
+    font-size: 25px;
+  }
+
+  .Heart {
+    font-size: 28px;
+  }
+
+  .New {
+    width: 105px;
+    height: 32px;
+  }
+
   button {
-    border-radius: 30px;
+    border-radius: 28px;
     height: 80px;
     font-size: 30px;
     width: 25%;
@@ -525,16 +574,16 @@ button:hover {
   }
 
   .New {
-    width: 120px;
-    height: 40px;
+    width: 105px;
+    height: 32px;
   }
 
   .La_palette p {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .La_note p {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   footer {
