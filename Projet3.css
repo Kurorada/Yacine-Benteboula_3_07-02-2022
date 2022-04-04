@@ -27,13 +27,12 @@ body {
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
-.F3 {
-  background-color: #f4edfe;
-}
-
 .Fforme:hover {
   background-color: #f4edfe;
   box-shadow: 15px 12px 10px #c2c2c2;
+}
+.Fforme:hover .fa-solid {
+  color: #9356dc;
 }
 
 a {
